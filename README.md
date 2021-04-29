@@ -12,7 +12,7 @@ This tool will continously check for vaccine center availability in real time an
 
 4. Download script.py and prop.properties files. Give valid values for all the fields in prop.properties file.
 
-5. Run "python script.py" from the location where you have downloaded script.py and prop.properties files. Tha machine should have python3 installed before running the script.
+5. Run "python script.py" from the location where you have downloaded script.py and prop.properties files. The machine should have python3 installed before running the script.
 
 6. Screenshots are also attached on how to get values from sinch.
 
