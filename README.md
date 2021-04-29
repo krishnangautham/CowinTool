@@ -22,4 +22,4 @@ This tool will continously check for vaccine center availability in real time an
 
 The tool is checking for center availability across a district. Further code customisations can be done to check availability for private facilities/specific centre or vaccine availability for min-age limit of 18 above etc. This logic can be applied inside method find_vaccine_center(): line no: 40 (item_dict = json.loads(output)).
 
-Note: Once an available vaccine center is found, the tool will send the sms and will exit the process. User needs to restart the tool again if he still needs to monitor the availability. Also in cases when session is timed out for cowin portal the user needs to get new token value and update the property file.
+Note: Once an available vaccine center is found, the tool will send the sms and will exit the process. User needs to restart the tool again if he still needs to monitor the availability. Also in case if session is timed out for cowin portal(happens when new otp request is send through cowin portal) the user needs to get new token value and update the property file.
