@@ -7,9 +7,7 @@ config.read('prop.properties')
 
 district_id = config.get("cowin", "district_id")
 date = config.get("cowin", "date")
-cowin_url = "https://cdn-api.co-vin.in/api/v2/appointment/sessions/calendarByDistrict?district_id=" + district_id + "&date=" + date
-cowin_token = "Bearer " + config.get("cowin", "cowin_token")
-
+cowin_url = "https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/calendarByDistrict?district_id=" + district_id + "&date=" + date
 
 from_number = config.get("sinch", "from_number")
 to_number = config.get("sinch", "to_number")
@@ -32,7 +30,7 @@ def send_sms():
     print(response) 
     
 def find_vaccine_center():
-    headers = {'Content-Type': type, 'Authorization': cowin_token}
+    headers = {'Content-Type': type}
     response = None
     response = requests.get(cowin_url, headers = headers)
     output = response.content
