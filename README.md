@@ -12,12 +12,12 @@ This tool will continously check for vaccine center availability in real time an
 
 4. Download script.py and prop.properties files. Give valid values for all the fields in prop.properties file.
 
-5. Run python script.py from the location where you have downloaded script.py and prop.properties files. Tha machine should have python 3 installed before running the script.
+5. Run "python script.py" from the location where you have downloaded script.py and prop.properties files. Tha machine should have python3 installed before running the script.
 
 6. Screenshots are also attached on how to get values from sinch.
 
 #Further scope of customisations
 
-The tool is checking for center availability across a district. Further code customisations can be done to check availability for private facilities/specific centre or vaccine availability for min-age limit of 18 above etc. This logic can be applied inside method find_vaccine_center(): line no: 40 (item_dict = json.loads(output)).
+The tool is checking for center availability across a district. Further code customisations can be done to check availability for private facilities/specific centre or vaccine availability for min-age limit of 18 above etc. This logic can be applied inside method find_vaccine_center(): line no: 37 (item_dict = json.loads(output)).
 
 Note: Once an available vaccine center is found, the tool will send the sms and will exit the process. User needs to restart the tool again if he still needs to monitor the availability. 
