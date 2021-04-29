@@ -12,7 +12,7 @@ This tool will continously check for vaccine center availability in real time an
 
 4. Get "SERVICE PLAN ID", "API TOKEN" and "from number" from sinch after registration. Sinch gives a free trial of 2 EUROs for messaging services. You can upgrade your membership or register with a new number later if your usage exceeds the free trial. You can only send customised messages to your registered mobile number only using trial subscription.
 
-6. Download script.py and prop.properties files. Give valid values for all the fields in propo.properties file.
+6. Download script.py and prop.properties files. Give valid values for all the fields in prop.properties file.
 
 7. Run python script.py from the location where you have downloaded script.py and prop.properties files. Tha machine should have python 3 installed before running the script.
 
